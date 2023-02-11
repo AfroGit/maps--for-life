@@ -42,3 +42,13 @@
 //     return name[0].toUpperCase() + name.slice(1) + index;
 // });
 // console.log(empUpdate);
+// -------------------------------------------------
+
+/*Extract the age property from an array of objects which consist of lecturers and their ages. Lecturers = [{ name: ‘Jake’, age: 34 }, { name: ‘Betty’, age: 28 }, { name: ‘Francisca’, age: 45 }, { name: ‘Tapper’, age: 40 }]. */ 
+
+let lecturers = [{ name: 'Jake', age: 34 }, { name: 'Betty', age: 28 }, { name: 'Francisca', age: 45 }, { name: 'Tapper', age: 40 }];
+// let lecturersAge = lecturers.map(age => age.age);
+ 
+   let ageArr = lecturers.map(age => age.age);
+
+    console.log(ageArr);
