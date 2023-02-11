@@ -46,9 +46,15 @@
 
 /*Extract the age property from an array of objects which consist of lecturers and their ages. Lecturers = [{ name: ‘Jake’, age: 34 }, { name: ‘Betty’, age: 28 }, { name: ‘Francisca’, age: 45 }, { name: ‘Tapper’, age: 40 }]. */ 
 
-let lecturers = [{ name: 'Jake', age: 34 }, { name: 'Betty', age: 28 }, { name: 'Francisca', age: 45 }, { name: 'Tapper', age: 40 }];
-// let lecturersAge = lecturers.map(age => age.age);
+// let lecturers = [{ name: 'Jake', age: 34 }, { name: 'Betty', age: 28 }, { name: 'Francisca', age: 45 }, { name: 'Tapper', age: 40 }];
+// // let lecturersAge = lecturers.map(age => age.age);
  
-   let ageArr = lecturers.map(age => age.age);
+//    let ageArr = lecturers.map(age => age.age);
 
-    console.log(ageArr);
+    // console.log(ageArr);
+
+ // X = [{y: 'z'}, {y: 'D'}, {}, {}];
+ //  let finders =  X.map(y => y.y); 
+// Target the key in your params to define the value that it pairs.
+ //   console.log(finders); 
+  // In this case finders is the new array that is returned by the map().
