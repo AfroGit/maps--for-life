@@ -72,13 +72,14 @@ const oldArray = [17, 5, -4, 9, -10];
 const newArray = oldArray.map(function(item, index, array){
   let nextItem = index + 1 < array.length ? array[index + 1] : 0;
      return item - nextItem;
+  });
   // console.log(item);
   // console.log(index);
   // console.log(oldArray[oldArray.length - 1]);
   // if (item !== oldArray[oldArray.length - 1]) {
   
   // };
-});
+
 
 // currentItem - nextItem
 // 17 - 5 = 12
@@ -86,7 +87,7 @@ const newArray = oldArray.map(function(item, index, array){
 // -4 - 9 = -13
 // 9 - -10 = 19
 // -10 = -10
- console.log(oldArray);
+ console.log(newArray);
 // Output 
 // [12, 9, -13, 19, -10]
 // 
