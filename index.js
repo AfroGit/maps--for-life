@@ -69,14 +69,15 @@
 //     if current item !== last item in the array { current item - next item }
 
 const oldArray = [17, 5, -4, 9, -10];
-const newArray = oldArray.map((item, index) => {
+const newArray = oldArray.map(function(item, index, array){
   let nextItem = index + 1 < array.length ? array[index + 1] : 0;
-  console.log(item);
-  console.log(index);
-  console.log(oldArray[oldArray.length - 1]);
-  if (item !== oldArray[oldArray.length - 1]) {
+     return item - nextItem;
+  // console.log(item);
+  // console.log(index);
+  // console.log(oldArray[oldArray.length - 1]);
+  // if (item !== oldArray[oldArray.length - 1]) {
   
-  };
+  // };
 });
 
 // currentItem - nextItem
@@ -85,6 +86,6 @@ const newArray = oldArray.map((item, index) => {
 // -4 - 9 = -13
 // 9 - -10 = 19
 // -10 = -10
-// console.log(nameOfFunction(oldArray));
+ console.log(oldArray);
 // Output 
 // [12, 9, -13, 19, -10]
