@@ -89,3 +89,4 @@ const newArray = oldArray.map(function(item, index, array){
  console.log(oldArray);
 // Output 
 // [12, 9, -13, 19, -10]
+// 
