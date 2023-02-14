@@ -96,6 +96,12 @@
 
 /*Convert the following strings of numbers in the array into whole numbers. [‘10’, ‘15.3’, ‘35’, ‘8.6’, ‘22’]. */ 
 
-let strArray = ['10', '15.3', '35', '8.6', '22'];
-let wholeArr = strArray.map(item => Math.floor(Number(item)));
-console.log(wholeArr);
+// let strArray = ['10', '15.3', '35', '8.6', '22'];
+// let wholeArr = strArray.map(item => Math.floor(Number(item)));
+// console.log(wholeArr);
+
+// ---------------------------------------------------------
+/*For this example, we are given an array of numbers, arrange them in a descending order and add the index of each element. */
+const numsArr = [5, 8, 10, 4, 9];
+const descendArray = numsArr.map((number, index) => number + index).sort((a, b) => b - a);
+console.log(descendArray);
