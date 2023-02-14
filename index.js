@@ -68,11 +68,11 @@
 // P - if current item == last item in the array { return the last item }
 //     if current item !== last item in the array { current item - next item }
 
-const oldArray = [17, 5, -4, 9, -10];
-const newArray = oldArray.map(function(item, index, array){
-  let nextItem = index + 1 < array.length ? array[index + 1] : 0;
-     return item - nextItem;
-  });
+// const oldArray = [17, 5, -4, 9, -10];
+// const newArray = oldArray.map(function(item, index, array){
+//   let nextItem = index + 1 < array.length ? array[index + 1] : 0;
+//      return item - nextItem;
+//   });
   // console.log(item);
   // console.log(index);
   // console.log(oldArray[oldArray.length - 1]);
@@ -87,7 +87,15 @@ const newArray = oldArray.map(function(item, index, array){
 // -4 - 9 = -13
 // 9 - -10 = 19
 // -10 = -10
- console.log(newArray);
+ // console.log(newArray);
 // Output 
 // [12, 9, -13, 19, -10]
 // 
+// -----------------------------------------------------
+
+
+/*Convert the following strings of numbers in the array into whole numbers. [‘10’, ‘15.3’, ‘35’, ‘8.6’, ‘22’]. */ 
+
+let strArray = ['10', '15.3', '35', '8.6', '22'];
+let wholeArr = strArray.map(item => Math.floor(Number(item)));
+console.log(wholeArr);
