@@ -102,6 +102,26 @@
 
 // ---------------------------------------------------------
 /*For this example, we are given an array of numbers, arrange them in a descending order and add the index of each element. */
-const numsArr = [5, 8, 10, 4, 9];
-const descendArray = numsArr.map((number, index) => number + index).sort((a, b) => b - a);
-console.log(descendArray);
+// 
+// const numsArr = [5, 8, 10, 4, 9];
+// const descendArray = numsArr.map((number, index) => number + index).sort((a, b) => b - a);
+// console.log(descendArray);
+
+// const numsArr = [50, 80, 10, 40, 90];
+// const descendArray = numsArr.map((number, index) => number + index);
+// console.log(descendArray);
+
+// ----------------------------------------------
+
+
+/*Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
+Example(Input => Output):
+
+35231 => [1,3,2,5,3]
+0 => [0]
+ */ 
+
+// function digitize(n) {
+//   return n.toString().split("").reverse().map(Number)
+// };
+// console.log(digitize);
