@@ -126,6 +126,6 @@ Example(Input => Output):
 // };
 // console.log(digitize);
 
-const random = 35231;
-const newArr = random.toString().split('').reverse().map(Number);
-console.log(newArr);
+// const random = 35231;
+// const newArr = random.toString().split('').reverse().map(Number);
+// console.log(newArr);
