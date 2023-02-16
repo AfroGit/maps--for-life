@@ -125,3 +125,7 @@ Example(Input => Output):
 //   return n.toString().split("").reverse().map(Number)
 // };
 // console.log(digitize);
+
+const random = 35231;
+const newArr = random.toString().split('').reverse().map(Number);
+console.log(newArr);
