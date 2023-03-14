@@ -179,6 +179,17 @@ let users = [
 ];
 let emailSnippet = '@smallcompany.com';
 let usersEmails = users.map(function(element){
-  return `${element.firstName} ${element.lastName}${emailSnippet}`;
+  return `${element.firstName.toLowerCase()}${element.lastName.toLowerCase()}${emailSnippet}`;
 });
 console.log(usersEmails);
+// ---------------------------------------------------------------
+/* */ 
+// let arr = [2, 3, 5, 7]
+
+// arr.map(function(element, index, array){
+//     console.log(element);
+//     console.log(index);
+//     console.log(array);
+//     console.log(this);
+//     return element;
+// }, 80);
