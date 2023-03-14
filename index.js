@@ -129,3 +129,56 @@ Example(Input => Output):
 // const random = 35231;
 // const newArr = random.toString().split('').reverse().map(Number);
 // console.log(newArr);
+// --------------------------------------------------------------
+/*Task
+
+Use the map method to create a new array 
+called userFullNames that contains all of the users' 
+full names. The results should look like this:
+["Susan Steward", "Daniel Longbottom", "Jacob Black"]
+
+*/
+
+// let users = [
+//   {firstName : "Susan", lastName: "Steward"},
+//   {firstName : "Daniel", lastName: "Longbottom"},
+//   {firstName : "Jacob", lastName: "Black"}
+// ];
+// let userFullNames = users.map(function(element){
+//   return `${element.firstName} ${element.lastName}`;
+// });
+
+// console.log(userFullNames);
+// ----------------------------------------------------------------
+/* 
+
+Challenge: 
+
+Use the map method to create a new array 
+called userEmails that creates email addresses 
+for each of the users in the users array. The 
+results should look like this:
+
+["SusanSteward@smallcompany.com", 
+ "DanielLongbottom@smallcompany.com", 
+ "JacobBlack@smallcompany.com"]
+
+For bonus points, render the email addresses in all 
+lowercase letters, like this:
+
+["susansteward@smallcompany.com", 
+ "daniellongbottom@smallcompany.com", 
+ "jacobblack@smallcompany.com"] 
+
+*/
+
+let users = [
+  {firstName : "Susan", lastName: "Steward"},
+  {firstName : "Daniel", lastName: "Longbottom"},
+  {firstName : "Jacob", lastName: "Black"}
+];
+let emailSnippet = '@smallcompany.com';
+let usersEmails = users.map(function(element){
+  return `${element.firstName} ${element.lastName}${emailSnippet}`;
+});
+console.log(usersEmails);
